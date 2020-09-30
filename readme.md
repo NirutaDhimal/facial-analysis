@@ -1,0 +1,1 @@
+This repository analyzes face of a person using api of aws rekognition service.
