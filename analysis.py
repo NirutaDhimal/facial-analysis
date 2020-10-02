@@ -2,7 +2,7 @@ import boto3
 import json
 
 #change photo to the path and file name of your image
-photo = "lisa.jpg"
+photo = input("Enter the path and file name of image you want to analyze: ")
 
 client = boto3.client('rekognition')
 
@@ -13,6 +13,7 @@ with open(photo, 'rb') as image:
     )
 
 #print(response)
+
 
 for detail in response["FaceDetails"]:
     print("Details of candidate:")
